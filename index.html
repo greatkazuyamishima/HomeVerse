@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>HomeVerse — Home</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- header -->
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="logo">HV</span>
+        <div>
+          <div style="font-weight:800">HomeVerse</div>
+          <div style="font-size:12px;color:var(--muted)">Buy • Sell • Rent</div>
+        </div>
+      </a>
+
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="listings.html">Buy / Rent</a>
+        <a href="sell.html">Sell</a>
+        <a href="login.html">Login</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- hero -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <h1>Find the perfect place to call home</h1>
+        <p>Handpicked properties across top neighborhoods. Verified listings, transparent pricing, expert support — all in one place.</p>
+
+        <div class="search-bar" role="search" aria-label="Find properties">
+          <input class="input" placeholder="City, locality or project">
+          <select><option>Buy</option><option>Rent</option></select>
+          <input class="input" placeholder="Min price">
+          <button class="search-btn">Search</button>
+        </div>
+
+        <div style="margin-top:14px">
+          <a href="listings.html" class="cta">Browse Listings</a>
+        </div>
+      </div>
+
+      <div style="width:360px" class="center">
+        <img alt="modern building" src="https://images.unsplash.com/photo-1560184897-6a90f9e6f7c0?q=80&w=900&auto=format&fit=crop&ixlib=rb-4.0.3&s=5f0d3a1e1f3f3c8f" style="width:100%;border-radius:12px;box-shadow:0 10px 30px rgba(2,6,23,0.35)">
+      </div>
+    </div>
+  </section>
+
+  <main class="container">
+    <!-- Featured properties -->
+    <section class="section" aria-labelledby="featured">
+      <h2 id="featured">Featured Properties</h2>
+      <p style="color:var(--muted)">Top picks for you — curated by our experts.</p>
+
+      <div class="cards" style="margin-top:18px">
+        <article class="card">
+          <img class="thumb" src="https://images.unsplash.com/photo-1560184897-6a90f9e6f7c0?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=5f0d3a1e1f3f3c8f" alt="3BHK Apartment">
+          <div class="card-body">
+            <h3>Modern 3BHK Apartment</h3>
+            <p>Premium apartment with modular kitchen, balcony and parking. Located in the heart of the city.</p>
+            <div class="meta">
+              <div class="price">₹ 78,00,000</div>
+              <a class="detail-link" href="property.html" style="text-decoration:none;color:var(--accent);font-weight:700">View</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img class="thumb" src="https://images.unsplash.com/photo-1572120360610-d971b9d7767c?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=0e9d7b54a2b6b8a9" alt="Luxury Villa">
+          <div class="card-body">
+            <h3>Luxury 4BHK Villa</h3>
+            <p>Sprawling villa with landscaped garden, private pool, and smart home features.</p>
+            <div class="meta">
+              <div class="price">₹ 1,50,00,000</div>
+              <a class="detail-link" href="property.html" style="text-decoration:none;color:var(--accent);font-weight:700">View</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <img class="thumb" src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=8d3d6e3a9a9b2a2b" alt="2BHK">
+          <div class="card-body">
+            <h3>Cozy 2BHK</h3>
+            <p>Affordable and efficient living space ideal for small families and working professionals.</p>
+            <div class="meta">
+              <div class="price">₹ 45,00,000</div>
+              <a class="detail-link" href="property.html" style="text-decoration:none;color:var(--accent);font-weight:700">View</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Amenities -->
+    <section class="section" id="amenities">
+      <h2>Amenities & Features</h2>
+      <p style="color:var(--muted)">Comfort, security and lifestyle — built into every property we list.</p>
+      <div style="margin-top:16px" class="amenities">
+        <div class="amenity">24/7 Security</div>
+        <div class="amenity">Gym & Pool</div>
+        <div class="amenity">Kids Play Area</div>
+        <div class="amenity">Power Backup</div>
+        <div class="amenity">Covered Parking</div>
+        <div class="amenity">High-Speed Elevators</div>
+      </div>
+    </section>
+
+    <!-- Compare table -->
+    <section class="section" id="compare">
+      <h2>Quick Comparison</h2>
+      <table class="table" aria-describedby="compare">
+        <thead>
+          <tr><th>Property</th><th>Area</th><th>Price</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Modern 3BHK</td><td>1200 sqft</td><td>₹ 78,00,000</td></tr>
+          <tr><td>Luxury 4BHK Villa</td><td>3000 sqft</td><td>₹ 1,50,00,000</td></tr>
+          <tr><td>Cozy 2BHK</td><td>850 sqft</td><td>₹ 45,00,000</td></tr>
+        </tbody>
+        <caption class="small">Prices indicative and may vary depending on locality.</caption>
+      </table>
+    </section>
+
+    <!-- Contact panel -->
+    <section class="section" id="contact">
+      <h2>Contact Us</h2>
+      <p style="color:var(--muted)">Have questions or want a guided tour? Send us a message.</p>
+
+      <form action="#" class="form" style="margin-top:14px">
+        <input name="name" placeholder="Your name" required>
+        <input name="email" placeholder="Email address" required type="email">
+        <input name="phone" placeholder="Phone (optional)">
+        <select name="interest">
+          <option>I'm looking to buy</option>
+          <option>I'm looking to rent</option>
+          <option>I want to sell</option>
+        </select>
+        <textarea name="message" placeholder="Tell us what you need" required></textarea>
+        <button class="submit" type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <div style="display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div>
+        <strong>HomeVerse</strong><div class="small">Trusted property marketplace • © 2025</div>
+      </div>
+      <div class="small">Terms • Privacy • Contact</div>
+    </div>
+  </footer>
+
+</body>
+</html>
